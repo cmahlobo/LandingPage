@@ -177,7 +177,11 @@
     width: 100%;
   }
   .page-top h1 {
-    background-color: lightgray;
+    background: #f2f5f6;
+    background: -moz-linear-gradient(-45deg, #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%);
+    background: -webkit-linear-gradient(-45deg, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+    background: linear-gradient(135deg, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=1 );
     align-items: center;
     height: 10%;
     text-align: center;
@@ -188,7 +192,11 @@
     font-family: 'Days One', sans-serif;
   }
   .page-top nav {
-    background-color: lightgray;
+    background: #f2f5f6;
+    background: -moz-linear-gradient(-45deg, #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%);
+    background: -webkit-linear-gradient(-45deg, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+    background: linear-gradient(135deg, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=1 );
     align-items: center;
     height: 10%;
     display: flex;
@@ -328,4 +336,11 @@
     width: 100%;
     height: auto;
     border-radius: 10px;
+  }
+
+  .donors{
+      display: flex;
+      width:100%;
+      height: 100%;
+      padding-left: 20%;
   }
