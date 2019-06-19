@@ -162,17 +162,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', end
   h2 {
     font-size: 3.2rem;
     text-shadow: 0 0 3px white, 0 0 5px #0000FF;
-    font-family: 'Days One', sans-serif;
+    font-family: 'Share', cursive;
   }
   h3 {
     font-size: 2.8rem;
     text-shadow: 0 0 3px white, 0 0 5px #0000FF;
-    font-family: 'Days One', sans-serif;
+    font-family: 'Share', cursive;
   }
 
   .profile{
     border: 2px solid white;
     border-radius: 7px;
+    margin-top: 10%;
   }
 
   p {
