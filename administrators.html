@@ -11,35 +11,59 @@
   <link href="https://fonts.googleapis.com/css?family=Days+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Share&display=swap" rel="stylesheet">
   <link href="css/administrators.css" rel="stylesheet">
+  <script src="components/index.js" async></script>
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
 </head>
 
 <body>
 
- <!-- navigation code here -->
  <div class="page-top">
   <h1>LunchMeet</h1>
   <nav class="navigation">
     <ul>
       <li>Home</li>
       <li>Administrators</li>
-      <li>Sign-Up</li>
+      <li>Login/Sign-Up</li>
     </ul>
   </nav>
-</div>
+ </div>
 
   <div class="container home">
 
     <header class="intro">
-       
-       
        <section class="profile">
-        <h2>Profile</h2>
-        
-        <p></p>
+        <div class="one">
+            <h2>Profile</h2>
+            
+            <p>Name: Sample</p>
+            <p>School: Sample</p>
+            <p>E-mail: Sample</p>
+            <p>Password: Sample</p>
+        </div>
+        <div class="two">
+                <table class="table">
+                        <tr>
+                            <th>School Name</th>
+                            <th>Goal</th>
+                        </tr>
+                        <tr>
+                            <td>Crispus Attucks Elementary</td>
+                            <td>$15,000</td>
+                        </tr>
+                        <tr>
+                            <td>William Tellingsworth Prep</td>
+                            <td>$7,000</td>
+                        </tr>
+                        <tr>
+                            <td>Rosa Gutierrez Charter School</td>
+                            <td>$6,455.90</td>
+                        </tr>
+                        <tr>
+                            <td>Westbury High School</td>
+                            <td>$11,766</td>
+                        </tr>
+                    </table>
+        </div>
     </section>
     </header>
 
@@ -53,26 +77,44 @@
      
       <h3>Add A School</h3>
     
-      <p></p>
-    
-      <p></p>
+      <div class = "launch3">
+            <form action="">
+                <fieldset>
+                  School Name:<br>
+                  <input type="text" name="name" placeholder="School Name" value=""><br>
+                  Goal:<br>
+                  <input type="text" name="goal" placeholder="Goal" value=""><br>
+                  School Code:<br>
+                  <input type="text" name="code" placeholder="School Code"><br><br> 
+                  <input type="submit" value="ADD" class="subs">
+                </fieldset>
+              </form>
+       </div>
     </section>
     
     <section class="walk">
       <div class="walk-text">
         <h3>Donate</h3>
 
-        <p></p>
-      
-        <p></p>
-      
+        <form action="/action_page.php">
+            <fieldset>
+              Amount:<br>
+              <input type="number" name="amount" placeholder="$" value=""><br>
+              <select name="schools" class="dropdown">
+                    <option value="health" class="health">Crispus Attucks Elementary</option>
+                    <option value="school" class="o2">William Tellingsworth Prep</option>
+                    <option value="social" class="o3">Rosa Gutierrez Charter School</option>
+                    <option value="dailytasks">Westbury High School</option>
+                  </select><br>
+            </fieldset>
+        </form>
         <div class="btn">
-          <a href="" target="_blank"><button class="buttons">Donate</button></a>
+          <button class="buttons">Donate</button>
         </div>
       </div>
       
-      <div class="walk-img">
-          <img src="" class="donors" alt="happy donors">
+      <div class="dimg">
+          <img src="img/donors.jpeg" class="donors" alt="happy donors">
       </div>
 
     </section>

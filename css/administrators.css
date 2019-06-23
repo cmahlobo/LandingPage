@@ -145,11 +145,11 @@
   body {
     font-family: 'Ubuntu', sans-serif;
     color: #5E6164;
-    background: #959595; /* Old browsers */
-background: -moz-linear-gradient(-45deg, #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 76%, #383838 87%, #1b1b1b 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg, #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg, #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=1 );
+    background: #959595;
+    background: -moz-linear-gradient(-45deg, #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 76%, #383838 87%, #1b1b1b 100%);
+    background: -webkit-linear-gradient(-45deg, #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%);
+    background: linear-gradient(135deg, #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=1 );
   }
   h1,
   h2,
@@ -333,11 +333,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', end
     background-color: white;
     color: darkblue;
   }
-  @media (max-width: 500px) {
-    .home .walk .walk-text .btn button {
-      width: 480px;
-      height: 60px;
-    }
+  
   }
   .home .walk .walk-text .walk-img {
     width: 46%;
@@ -366,3 +362,48 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', end
   footer p{
       color: #010101
   }
+
+  input, legend, select {
+    font-size: 3.2rem;
+    text-shadow: 0 0 3px white, 0 0 5px #0000FF;
+    font-family: 'Share', cursive;
+  }
+
+  .huncho{
+      display: flex;
+      flex-direction: column;
+  }
+
+.launch{
+    padding-bottom: 8%;
+}
+
+  .launch2{
+    border-top: 4px solid violet;
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
+
+  .profile{
+      display: flex;
+      flex-direction: row;
+  }
+
+  .two{
+      padding: 10% 30%;
+      padding-bottom: 5%;
+      padding-right: 15%;
+  }
+ .dimg img{
+     height: 80%;
+ }
+ 
+ select{
+     margin-bottom: 3%;
+     margin-top: 4%;
+ }
+
+ table{
+     color: white;
+     font-size: 1.3rem;
+ }

@@ -10,22 +10,18 @@
 
   <link href="https://fonts.googleapis.com/css?family=Days+One&display=swap" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
-
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+  <script src="components/index.js" async></script>
 </head>
 
 <body>
 
- <!-- navigation code here -->
  <div class="page-top">
   <h1>LunchMeet</h1>
   <nav class="navigation">
     <ul>
       <li>Home</li>
       <li>Administrators</li>
-      <li>Sign-Up</li>
+      <li>Login/Sign-Up</li>
     </ul>
   </nav>
 </div>
@@ -33,7 +29,6 @@
   <div class="container home">
 
     <header class="intro">
-       <!-- image code here -->
        <section class="header-image">
           <img src="img/lunch.jpg" class="top-pic" alt="main header">
        </section>
@@ -52,8 +47,8 @@
     </header>
 
     <section class="lunch-images">
-        <img src="img/eating.jpeg" class="eating" alt="student eating lunch">
         <img src="img/lunchbox.jpeg" class="lunchbox" alt="lunchbox">
+        <img src="img/eating.jpeg" class="eating" alt="student eating lunch">
         <img src="img/money.jpg" class="money" alt="dollar signs">
     </section>
    
@@ -69,16 +64,7 @@
           that can help everyone donate and expose the need for help in all locations? 
       </p>
     
-      <p></p>
-    </section>
-    
-    <section class="walk">
-      <div class="walk-text">
-        <h3>Donate</h3>
-
-        <p></p>
-      
-        <table class="table">
+      <table class="table">
             <tr>
                 <th>School Name</th>
                 <th>Goal</th>
@@ -100,9 +86,28 @@
                 <td>$11,766</td>
             </tr>
         </table>
+    </section>
+    
+    <section class="walk">
+      <div class="walk-text">
+        <h3>Donate</h3>
+
+        <p></p>
       
+        <form action="/action_page.php">
+            <fieldset>
+              Amount:<br>
+              <input type="number" name="amount" placeholder="$" value=""><br>
+              <select name="schools" class="dropdown">
+                    <option value="health" class="health">Crispus Attucks Elementary</option>
+                    <option value="school" class="o2">William Tellingsworth Prep</option>
+                    <option value="social" class="o3">Rosa Gutierrez Charter School</option>
+                    <option value="dailytasks">Westbury High School</option>
+                  </select><br>
+            </fieldset>
+        </form>
         <div class="btn">
-          <a href="administrators.html" target="_blank"><button class="buttons">Donate</button></a>
+          <button class="buttons">Donate</button>
         </div>
       </div>
       
