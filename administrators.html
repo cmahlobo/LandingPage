@@ -21,14 +21,14 @@
   <h1>LunchMeet</h1>
   <nav class="navigation">
     <ul>
-      <li>Home</li>
-      <li>Administrators</li>
-      <li>Login/Sign-Up</li>
+      <li> <a href="index.html"> Home </a> </li>
+      <li> <button class="tablinks" onclick="openCity(event, 'Contact')"><a href="administrators.html">Administrators</a></button></li>
+      <li> <button class="tablinks" onclick="openCity(event, 'Login')">Login/Sign-Up</button></li>
     </ul>
   </nav>
  </div>
 
-  <div class="container home">
+  <div class="container home tabcontent" id="Contact">
 
     <header class="intro">
        <section class="profile">
@@ -118,6 +118,7 @@
       </div>
 
     </section>
+            </div>
 
     <footer>
       <p>Copyright LunchMeet 2019</p>

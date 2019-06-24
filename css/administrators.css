@@ -186,6 +186,11 @@
     width: 100%;
     margin: 0 auto;
   }
+  a{
+      color:black;
+      border: none;
+      text-decoration: none;
+  }
   .page-top {
     width: 100%;
   }
@@ -407,3 +412,24 @@
      color: white;
      font-size: 1.3rem;
  }
+
+ .tablinks {
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .tablinks:hover {
+    background-color: #777;
+  }
+
+  .tab {
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+  .tab button.active {
+    background-color: #ccc;
+  }
